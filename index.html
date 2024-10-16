@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Parlor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://wallpapers.com/images/hd/neon-asus-rog-symbol-b1hya2aun8k8i53r.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(21, 227, 104);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: hwb(0 3% 93% / 0.525);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: rgb(0, 0, 0);
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .description, .platforms, .booking, .gallery {
+            
+            background: url('https://img.freepik.com/free-vector/door-with-magic-portal-travel-another-universe-time-rocky-surface-alien-planet-space-cartoon-game-ui-landscape-with-glowing-mysterious-entrance-parallel-reality-fantasy-world_107791-23767.jpg?w=1480&t=st=1729022378~exp=1729022978~hmac=caaab645cfa0bf50f15f0cfe14a8972b1ff6ebb38306b486f69eabd270d9cd55') no-repeat center center fixed;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .description h2, .platforms h2, .booking h2, .gallery h2 {
+            margin-top: 0;
+        }
+
+        .platforms ul, .gallery {
+            list-style: none;
+            padding: 0;
+        }
+
+        .platforms ul li {
+            margin: 10px 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: calc(33.333% - 10px);
+            border-radius: 8px;
+        }
+
+        .booking form {
+            display: flex;
+            flex-direction: column;
+            color: hwb(0 0% 27%);
+        }
+
+        .booking form label {
+            margin: 10px 0 5px;
+            color: hwb(0 3% 96%);
+        }
+
+        .booking form input, .booking form select {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 15px;
+            color: hwb(0 0% 100%);
+        }
+
+        .booking form button {
+            background: url('https://img.freepik.com/free-vector/alien-planet-landscape-space-game-background_107791-1847.jpg?w=1480&t=st=1729022200~exp=1729022800~hmac=ba9221bf9943dbf2a3aa03947076d6d473a20993c7d4e8de8f5afac495b5910b') no-repeat center center fixed;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+
+        .booking form button:hover {
+            background: hsl(0, 79%, 43%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to GameZone Parlor</h1>
+        <p>Your ultimate destination for PC, Xbox, and PlayStation gaming!</p>
+    </header>
+
+    <div class="container">
+        <section class="description">
+            <h2>About Us</h2>
+            <p>GameZone Parlor is your go-to spot for an unforgettable gaming experience! With the latest gaming PCs, Xbox Series X, and PlayStation 5 consoles, we offer a wide selection of AAA titles in a comfortable and immersive environment. Whether you're a casual gamer or a hardcore enthusiast, our gaming parlor is designed to cater to all your gaming needs.</p>
+        </section>
+
+        <section class="platforms">
+            <h2>Available Platforms & Games</h2>
+            <ul>
+                <li><strong>PC Games:</strong> Cyberpunk 2077, Call of Duty: Modern Warfare, Valorant, Dota 2</li>
+                <li><strong>Xbox Series X:</strong> Halo Infinite, Forza Horizon 5, Gears 5</li>
+                <li><strong>PlayStation 5:</strong> Spider-Man: Miles Morales, Ghost of Tsushima, Ratchet & Clank</li>
+            </ul>
+        </section>
+
+        <section class="gallery">
+            <h2></h2>
+            <img src="https://imgs.search.brave.com/FwjeVnzmtkxkDgDwcwtbxVDt7GoqpUsKdoFosn5KKZU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMyLmFscGhhY29k/ZXJzLmNvbS81OTcv/NTk3OTY1LmpwZw" alt="Gaming Setup 1"style="width: 50000%; height: auto;">
+            <h3></h3>
+            <img src="https://imgs.search.brave.com/dATSZ28c_fgj8t3m0VcE7vGa-oDwBgrywlNCCC_YuiE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTF2Y1ZXYXpaNkwu/anBn" alt="Gaming Setup 2"style="width: 50000%; height: auto;">
+           <h4></h4>
+            <img src="https://wallpapers.com/images/high/gta-sa-4k-collage-poster-ejzymo80oomjxov9.webp" alt="Gaming Setup 3"style="width: 50000%; height: auto;">
+            <h5></h5>
+            <img src="https://attractmo.de/wp-content/uploads/2023/11/poe-768x432.jpeg" alt="Gaming Setup 4"style="width: 50000%; height: auto;">
+            <h6></h6>
+            <img src="C:\Users\RAHUL\Desktop\PRACTICE SET" alt="Gaming Setup 5"style="width: 50000%; height: auto;">
+            <img src="https://wallpapercave.com/wp/wp3770429.png" alt="Gaming Setup 6"style="width: 99%; height: 200%">
+        </section>
+
+        <section class="booking">
+            <h2>Book Your Gaming Slot</h2>
+            <form id="bookingForm">
+                <label for="platform">Choose Platform:</label>
+                <select id="platform" required>
+                    <option value="" disabled selected>Select your platform</option>
+                    <option value="PC">PC</option>
+                    <option value="Xbox Series X">Xbox Series X</option>
+                    <option value="PlayStation 5">PlayStation 5</option>
+                </select>
+
+                <label for="game">Select Game:</label>
+                <input type="text" id="game" placeholder="Enter game name" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+
+                <label for="time">Select Time Slot:</label>
+                <select id="time" required>
+                    <option value="" disabled selected>Select time slot</option>
+                    <option value="10am-12pm">10am - 12pm</option>
+                    <option value="12pm-2pm">12pm - 2pm</option>
+                    <option value="2pm-4pm">2pm - 4pm</option>
+                    <option value="4pm-6pm">4pm - 6pm</option>
+                    <option value="6pm-8pm">6pm - 8pm</option>
+                    <option value="8pm-10pm">8pm - 10pm</option>
+                </select>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const platform = document.getElementById('platform').value;
+            const game = document.getElementById('game').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            
+            alert(`You have successfully booked a slot for ${game} on ${platform} at ${time} on ${date}.`);
+            // Here, you can add code to send booking details to a server if needed.
+        });
+    </script>
+</body>
+</html>
